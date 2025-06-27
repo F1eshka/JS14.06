@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
       log.textContent += `${getTimeString()} ${text}\n`;
     }
   
-    // Варіант через .then()
     startBtn.addEventListener("click", () => {
       const delay = Number(delayInput.value);
       const result = getSelectedResult();
@@ -44,7 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
   
-    // Варіант через async/await
     startAsyncBtn.addEventListener("click", async () => {
       const delay = Number(delayInput.value);
       const result = getSelectedResult();
